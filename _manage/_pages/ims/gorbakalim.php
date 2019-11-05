@@ -1,0 +1,1043 @@
+
+<HTML>
+<head>
+
+</head>
+
+</head>
+<?php
+
+        $myrow['ili'] = $_POST['iller'];
+        $myrow['ilce'] = $_POST['ilceler'];
+        $mahalle = $_POST['koyler'];
+
+        echo "Ýl: ".$myrow['ili']." Ýlçe: ". $myrow['ilce']." Mahalle: ". $mahalle;  // Numara olarak tutmak için
+        echo "<br><br>";
+
+        echo "Yerlerin numarasý yerine isimlerini de þöyle yazdýrabilirsiniz... <br>Yani veritabanýnda numaralarý tutulur.<br>";
+       //Yerlerin isimlerini görmek için if'li bir yapý oluþturabilirsiniz.
+       // örnek vereyim.
+echo "<br>Ýli: ----------------->  <b>";
+   if ($myrow['ili']=="") { echo "Ýli seçiniz"; }
+   if ($myrow['ili']==1) { echo "Adana"; }
+   if ($myrow['ili']==2) { echo "Adýyaman"; }
+   if ($myrow['ili']==3) { echo "Afyon"; }
+   if ($myrow['ili']==4) { echo "Aðrý"; }
+   if ($myrow['ili']==5) { echo "Amasya"; }
+   if ($myrow['ili']==6) { echo "Ankara"; }
+   if ($myrow['ili']==7) { echo "Antalya"; }
+   if ($myrow['ili']==8) { echo "Artvin"; }
+   if ($myrow['ili']==9) { echo "Aydýn"; }
+   if ($myrow['ili']==10) { echo "Balýkesir"; }
+   if ($myrow['ili']==11) { echo "Bilecik"; }
+   if ($myrow['ili']==12) { echo "Bingöl"; }
+   if ($myrow['ili']==13) { echo "Bitlis"; }
+   if ($myrow['ili']==14) { echo "Bolu"; }
+   if ($myrow['ili']==15) { echo "Burdur"; }
+   if ($myrow['ili']==16) { echo "Bursa"; }
+   if ($myrow['ili']==17) { echo "Çanakkale"; }
+   if ($myrow['ili']==18) { echo "Çankýrý"; }
+   if ($myrow['ili']==19) { echo "Çorum"; }
+   if ($myrow['ili']==20) { echo "Denizli"; }
+   if ($myrow['ili']==21) { echo "Diyarbakýr"; }
+   if ($myrow['ili']==22) { echo "Edirne"; }
+   if ($myrow['ili']==23) { echo "Elazýð"; }
+   if ($myrow['ili']==24) { echo "Erzincan"; }
+   if ($myrow['ili']==25) { echo "Erzurum"; }
+   if ($myrow['ili']==26) { echo "Eskiþehir"; }
+   if ($myrow['ili']==27) { echo "Gaziantep"; }
+   if ($myrow['ili']==28) { echo "Giresun"; }
+   if ($myrow['ili']==29) { echo "Gümüþhane"; }
+   if ($myrow['ili']==30) { echo "Hakkari"; }
+   if ($myrow['ili']==31) { echo "Hatay"; }
+   if ($myrow['ili']==32) { echo "Isparta"; }
+   if ($myrow['ili']==33) { echo "Mersin(içel)"; }
+   if ($myrow['ili']==34) { echo "Ýstanbul"; }
+   if ($myrow['ili']==35) { echo "Ýzmir"; }
+   if ($myrow['ili']==36) { echo "Kars"; }
+   if ($myrow['ili']==37) { echo "Kastamonu"; }
+   if ($myrow['ili']==38) { echo "Kayseri"; }
+   if ($myrow['ili']==39) { echo "Kýrklareli"; }
+   if ($myrow['ili']==40) { echo "Kýrþehir"; }
+   if ($myrow['ili']==41) { echo "Kocaeli(izmit)"; }
+   if ($myrow['ili']==42) { echo "Konya"; }
+   if ($myrow['ili']==43) { echo "Kütahya"; }
+   if ($myrow['ili']==44) { echo "Malatya"; }
+   if ($myrow['ili']==45) { echo "Manisa"; }
+   if ($myrow['ili']==46) { echo "Kahramanmaraþ"; }
+   if ($myrow['ili']==47) { echo "Mardin"; }
+   if ($myrow['ili']==48) { echo "Muðla"; }
+   if ($myrow['ili']==49) { echo "Muþ"; }
+   if ($myrow['ili']==50) { echo "Nevþehir"; }
+   if ($myrow['ili']==51) { echo "Niðde"; }
+   if ($myrow['ili']==52) { echo "Ordu"; }
+   if ($myrow['ili']==53) { echo "Rize"; }
+   if ($myrow['ili']==54) { echo "Sakarya"; }
+   if ($myrow['ili']==55) { echo "Samsun"; }
+   if ($myrow['ili']==56) { echo "Siirt"; }
+   if ($myrow['ili']==57) { echo "Sinop"; }
+   if ($myrow['ili']==58) { echo "Sivas"; }
+   if ($myrow['ili']==59) { echo "Tekirdað"; }
+   if ($myrow['ili']==60) { echo "Tokat"; }
+   if ($myrow['ili']==61) { echo "Trabzon"; }
+   if ($myrow['ili']==62) { echo "Tunceli"; }
+   if ($myrow['ili']==63) { echo "Þanlýurfa"; }
+   if ($myrow['ili']==64) { echo "Uþak"; }
+   if ($myrow['ili']==65) { echo "Van"; }
+   if ($myrow['ili']==66) { echo "Yozgat"; }
+   if ($myrow['ili']==67) { echo "Zonguldak"; }
+   if ($myrow['ili']==68) { echo "Aksaray"; }
+   if ($myrow['ili']==69) { echo "Bayburt"; }
+   if ($myrow['ili']==70) { echo "Karaman"; }
+   if ($myrow['ili']==71) { echo "Kýrýkkale"; }
+   if ($myrow['ili']==72) { echo "Batman"; }
+   if ($myrow['ili']==73) { echo "Þýrnak"; }
+   if ($myrow['ili']==74) { echo "Bartýn"; }
+   if ($myrow['ili']==75) { echo "Ardahan"; }
+   if ($myrow['ili']==76) { echo "Iðdýr"; }
+   if ($myrow['ili']==77) { echo "Yalova"; }
+   if ($myrow['ili']==78) { echo "Karabük"; }
+   if ($myrow['ili']==79) { echo "Kilis"; }
+   if ($myrow['ili']==80) { echo "Osmaniye"; }
+   if ($myrow['ili']==81) { echo "Düzce"; }
+echo "</b>";
+
+
+    // Ýlçeler de böyle, veritabanýndaki bilgiler
+    echo "<br>Ýlçe: --------------->  <b>";
+if ($myrow['ilce']=="") { echo "Ýlçe Seçiniz"; }
+if ($myrow['ilce']=="1001") { echo "Seyhan"; }
+if ($myrow['ilce']=="1002") { echo "Yüreðir"; }
+if ($myrow['ilce']=="1051") { echo "Aladað (Karsantý)"; }
+if ($myrow['ilce']=="1052") { echo "Ceyhan"; }
+if ($myrow['ilce']=="1053") { echo "Feke"; }
+if ($myrow['ilce']=="1054") { echo "Ýmamoðlu"; }
+if ($myrow['ilce']=="1055") { echo "Karaisalý"; }
+if ($myrow['ilce']=="1056") { echo "Karataþ"; }
+if ($myrow['ilce']=="1057") { echo "Kozan"; }
+if ($myrow['ilce']=="1058") { echo "Pozantý"; }
+if ($myrow['ilce']=="1059") { echo "Saimbeyli"; }
+if ($myrow['ilce']=="1060") { echo "Tufanbeyli"; }
+if ($myrow['ilce']=="1061") { echo "Yumurtalýk"; }
+if ($myrow['ilce']=="2001") { echo "Merkez"; }
+if ($myrow['ilce']=="2051") { echo "Besni"; }
+if ($myrow['ilce']=="2052") { echo "Çelikhan"; }
+if ($myrow['ilce']=="2053") { echo "Gerger"; }
+if ($myrow['ilce']=="2054") { echo "Gölbaþý"; }
+if ($myrow['ilce']=="2055") { echo "Kahta"; }
+if ($myrow['ilce']=="2056") { echo "Samsat"; }
+if ($myrow['ilce']=="2057") { echo "Sincik"; }
+if ($myrow['ilce']=="2058") { echo "Tut"; }
+if ($myrow['ilce']=="3001") { echo "Merkez"; }
+if ($myrow['ilce']=="3051") { echo "Baþmakçý"; }
+if ($myrow['ilce']=="3052") { echo "Bayat"; }
+if ($myrow['ilce']=="3053") { echo "Bolvadin"; }
+if ($myrow['ilce']=="3054") { echo "Çay"; }
+if ($myrow['ilce']=="3055") { echo "Çobanlar"; }
+if ($myrow['ilce']=="3056") { echo "Dazkýrý"; }
+if ($myrow['ilce']=="3057") { echo "Dinar"; }
+if ($myrow['ilce']=="3058") { echo "Emirdað"; }
+if ($myrow['ilce']=="3059") { echo "Evciler"; }
+if ($myrow['ilce']=="3060") { echo "Hocalar"; }
+if ($myrow['ilce']=="3061") { echo "Ýhsaniye"; }
+if ($myrow['ilce']=="3062") { echo "Ýscehisar"; }
+if ($myrow['ilce']=="3063") { echo "Kýzýlören"; }
+if ($myrow['ilce']=="3064") { echo "Sandýklý"; }
+if ($myrow['ilce']=="3065") { echo "Sinanpaþa (Sincanlý)"; }
+if ($myrow['ilce']=="3066") { echo "Sultandaðý"; }
+if ($myrow['ilce']=="3067") { echo "Þuhut"; }
+if ($myrow['ilce']=="4001") { echo "Merkez"; }
+if ($myrow['ilce']=="4051") { echo "Diyadin"; }
+if ($myrow['ilce']=="4052") { echo "Doðubeyazýt"; }
+if ($myrow['ilce']=="4053") { echo "Eleþkirt"; }
+if ($myrow['ilce']=="4054") { echo "Hamur"; }
+if ($myrow['ilce']=="4055") { echo "Patnos"; }
+if ($myrow['ilce']=="4056") { echo "Taþlýçay"; }
+if ($myrow['ilce']=="4057") { echo "Tutak"; }
+if ($myrow['ilce']=="5001") { echo "Merkez"; }
+if ($myrow['ilce']=="5051") { echo "Göynücek"; }
+if ($myrow['ilce']=="5052") { echo "Gümüþhacýköy"; }
+if ($myrow['ilce']=="5053") { echo "Hamamözü"; }
+if ($myrow['ilce']=="5054") { echo "Merzifon"; }
+if ($myrow['ilce']=="5055") { echo "Suluova"; }
+if ($myrow['ilce']=="5056") { echo "Taþova"; }
+if ($myrow['ilce']=="6001") { echo "Altýndað"; }
+if ($myrow['ilce']=="6002") { echo "Çankaya"; }
+if ($myrow['ilce']=="6003") { echo "Etimesgut"; }
+if ($myrow['ilce']=="6004") { echo "Keçiören"; }
+if ($myrow['ilce']=="6005") { echo "Mamak"; }
+if ($myrow['ilce']=="6006") { echo "Sincan"; }
+if ($myrow['ilce']=="6007") { echo "Yenimahalle"; }
+if ($myrow['ilce']=="6008") { echo "Gölbaþý"; }
+if ($myrow['ilce']=="6051") { echo "Akyurt"; }
+if ($myrow['ilce']=="6052") { echo "Ayaþ"; }
+if ($myrow['ilce']=="6053") { echo "Bala"; }
+if ($myrow['ilce']=="6054") { echo "Beypazarý"; }
+if ($myrow['ilce']=="6055") { echo "Çamlýdere"; }
+if ($myrow['ilce']=="6056") { echo "Çubuk"; }
+if ($myrow['ilce']=="6057") { echo "Elmadað"; }
+if ($myrow['ilce']=="6058") { echo "Evren"; }
+if ($myrow['ilce']=="6059") { echo "Güdül"; }
+if ($myrow['ilce']=="6060") { echo "Haymana"; }
+if ($myrow['ilce']=="6061") { echo "Kalecik"; }
+if ($myrow['ilce']=="6062") { echo "Kazan"; }
+if ($myrow['ilce']=="6063") { echo "Kýzýlcahamam"; }
+if ($myrow['ilce']=="6064") { echo "Nallýhan"; }
+if ($myrow['ilce']=="6065") { echo "Polatlý"; }
+if ($myrow['ilce']=="6066") { echo "Þereflikoçhisar"; }
+if ($myrow['ilce']=="7001") { echo "Merkez"; }
+if ($myrow['ilce']=="7051") { echo "Akseki"; }
+if ($myrow['ilce']=="7052") { echo "Alanya"; }
+if ($myrow['ilce']=="7053") { echo "Elmalý"; }
+if ($myrow['ilce']=="7054") { echo "Finike"; }
+if ($myrow['ilce']=="7055") { echo "Gazipaþa"; }
+if ($myrow['ilce']=="7056") { echo "Gündoðmuþ"; }
+if ($myrow['ilce']=="7057") { echo "Aydýnkent (Ýbradý)"; }
+if ($myrow['ilce']=="7058") { echo "Kale (Demre)"; }
+if ($myrow['ilce']=="7059") { echo "Kaþ"; }
+if ($myrow['ilce']=="7060") { echo "Kemer"; }
+if ($myrow['ilce']=="7061") { echo "Korkuteli"; }
+if ($myrow['ilce']=="7062") { echo "Kumluca"; }
+if ($myrow['ilce']=="7063") { echo "Manavgat"; }
+if ($myrow['ilce']=="7064") { echo "Serik"; }
+if ($myrow['ilce']=="8001") { echo "Merkez"; }
+if ($myrow['ilce']=="8051") { echo "Ardanuç"; }
+if ($myrow['ilce']=="8052") { echo "Arhavi"; }
+if ($myrow['ilce']=="8053") { echo "Borçka"; }
+if ($myrow['ilce']=="8054") { echo "Hopa"; }
+if ($myrow['ilce']=="8055") { echo "Göktaþ (Murgul)"; }
+if ($myrow['ilce']=="8056") { echo "Þavþat"; }
+if ($myrow['ilce']=="8057") { echo "Yusufeli"; }
+if ($myrow['ilce']=="9001") { echo "Merkez"; }
+if ($myrow['ilce']=="9051") { echo "Bozdoðan"; }
+if ($myrow['ilce']=="9052") { echo "Buharkent (Çubukdaðý)"; }
+if ($myrow['ilce']=="9053") { echo "Çine"; }
+if ($myrow['ilce']=="9054") { echo "Germencik"; }
+if ($myrow['ilce']=="9055") { echo "Ýncirliova"; }
+if ($myrow['ilce']=="9056") { echo "Karacasu"; }
+if ($myrow['ilce']=="9057") { echo "Karpuzlu"; }
+if ($myrow['ilce']=="9058") { echo "Koçarlý"; }
+if ($myrow['ilce']=="9059") { echo "Köþk"; }
+if ($myrow['ilce']=="9060") { echo "Kuþadasý"; }
+if ($myrow['ilce']=="9061") { echo "Kuyucak"; }
+if ($myrow['ilce']=="9062") { echo "Nazilli"; }
+if ($myrow['ilce']=="9063") { echo "Söke"; }
+if ($myrow['ilce']=="9064") { echo "Sultanhisar"; }
+if ($myrow['ilce']=="9065") { echo "Didim (Yenihisar)"; }
+if ($myrow['ilce']=="9066") { echo "Yenipazar"; }
+if ($myrow['ilce']=="10001") { echo "Merkez"; }
+if ($myrow['ilce']=="10051") { echo "Ayvalýk"; }
+if ($myrow['ilce']=="10052") { echo "Balya"; }
+if ($myrow['ilce']=="10053") { echo "Bandýrma"; }
+if ($myrow['ilce']=="10054") { echo "Bigadiç"; }
+if ($myrow['ilce']=="10055") { echo "Burhaniye"; }
+if ($myrow['ilce']=="10056") { echo "Dursunbey"; }
+if ($myrow['ilce']=="10057") { echo "Edremit"; }
+if ($myrow['ilce']=="10058") { echo "Erdek"; }
+if ($myrow['ilce']=="10059") { echo "Gömeç"; }
+if ($myrow['ilce']=="10060") { echo "Gönen"; }
+if ($myrow['ilce']=="10061") { echo "Havran"; }
+if ($myrow['ilce']=="10062") { echo "Ývrindi"; }
+if ($myrow['ilce']=="10063") { echo "Kepsut"; }
+if ($myrow['ilce']=="10064") { echo "Manyas"; }
+if ($myrow['ilce']=="10065") { echo "Marmara"; }
+if ($myrow['ilce']=="10066") { echo "Savaþtepe"; }
+if ($myrow['ilce']=="10067") { echo "Sýndýrgý"; }
+if ($myrow['ilce']=="10068") { echo "Susurluk"; }
+if ($myrow['ilce']=="11001") { echo "Merkez"; }
+if ($myrow['ilce']=="11051") { echo "Bozüyük"; }
+if ($myrow['ilce']=="11052") { echo "Gölpazarý"; }
+if ($myrow['ilce']=="11053") { echo "Ýnhisar"; }
+if ($myrow['ilce']=="11054") { echo "Osmaneli"; }
+if ($myrow['ilce']=="11055") { echo "Pazaryeri"; }
+if ($myrow['ilce']=="11056") { echo "Söðüt"; }
+if ($myrow['ilce']=="11057") { echo "Yenipazar"; }
+if ($myrow['ilce']=="12001") { echo "Merkez"; }
+if ($myrow['ilce']=="12051") { echo "Adaklý"; }
+if ($myrow['ilce']=="12052") { echo "Genç"; }
+if ($myrow['ilce']=="12053") { echo "Karlýova"; }
+if ($myrow['ilce']=="12054") { echo "Kýðý"; }
+if ($myrow['ilce']=="12055") { echo "Solhan"; }
+if ($myrow['ilce']=="12056") { echo "Yayladere"; }
+if ($myrow['ilce']=="12057") { echo "Yedisu"; }
+if ($myrow['ilce']=="13001") { echo "Merkez"; }
+if ($myrow['ilce']=="13051") { echo "Adilcevaz"; }
+if ($myrow['ilce']=="13052") { echo "Ahlat"; }
+if ($myrow['ilce']=="13053") { echo "Güroymak (Çukur)"; }
+if ($myrow['ilce']=="13054") { echo "Hizan"; }
+if ($myrow['ilce']=="13055") { echo "Mutki"; }
+if ($myrow['ilce']=="13056") { echo "Tatvan"; }
+if ($myrow['ilce']=="14001") { echo "Merkez"; }
+if ($myrow['ilce']=="14051") { echo "Dörtdivan"; }
+if ($myrow['ilce']=="14052") { echo "Gerede"; }
+if ($myrow['ilce']=="14053") { echo "Göynük"; }
+if ($myrow['ilce']=="14054") { echo "Kýbrýscýk"; }
+if ($myrow['ilce']=="14055") { echo "Mengen"; }
+if ($myrow['ilce']=="14056") { echo "Mudurnu"; }
+if ($myrow['ilce']=="14057") { echo "Seben"; }
+if ($myrow['ilce']=="14058") { echo "Yeniçaða"; }
+if ($myrow['ilce']=="14059") { echo "Kaynaþlý"; }
+if ($myrow['ilce']=="15001") { echo "Merkez"; }
+if ($myrow['ilce']=="15051") { echo "Aðlasun"; }
+if ($myrow['ilce']=="15052") { echo "Altýnyayla (Dirmil)"; }
+if ($myrow['ilce']=="15053") { echo "Bucak"; }
+if ($myrow['ilce']=="15054") { echo "Çavdýr"; }
+if ($myrow['ilce']=="15055") { echo "Çeltikçi"; }
+if ($myrow['ilce']=="15056") { echo "Gölhisar"; }
+if ($myrow['ilce']=="15057") { echo "Karamanlý"; }
+if ($myrow['ilce']=="15058") { echo "Kemer"; }
+if ($myrow['ilce']=="15059") { echo "Tefenni"; }
+if ($myrow['ilce']=="15060") { echo "Yeþilova"; }
+if ($myrow['ilce']=="16001") { echo "Nilüfer"; }
+if ($myrow['ilce']=="16002") { echo "Osmangazi"; }
+if ($myrow['ilce']=="16003") { echo "Yýldýrým"; }
+if ($myrow['ilce']=="16051") { echo "Büyükorhan"; }
+if ($myrow['ilce']=="16052") { echo "Gemlik"; }
+if ($myrow['ilce']=="16053") { echo "Gürsu"; }
+if ($myrow['ilce']=="16054") { echo "Harmancýk"; }
+if ($myrow['ilce']=="16055") { echo "Ýnegöl"; }
+if ($myrow['ilce']=="16056") { echo "Ýznik"; }
+if ($myrow['ilce']=="16057") { echo "Karacabey"; }
+if ($myrow['ilce']=="16058") { echo "Keles"; }
+if ($myrow['ilce']=="16059") { echo "Kestel"; }
+if ($myrow['ilce']=="16060") { echo "Mudanya"; }
+if ($myrow['ilce']=="16061") { echo "Mustafakemalpaþa"; }
+if ($myrow['ilce']=="16062") { echo "Orhaneli"; }
+if ($myrow['ilce']=="16063") { echo "Orhangazi"; }
+if ($myrow['ilce']=="16064") { echo "Yeniþehir"; }
+if ($myrow['ilce']=="17001") { echo "Merkez"; }
+if ($myrow['ilce']=="17051") { echo "Ayvacýk"; }
+if ($myrow['ilce']=="17052") { echo "Bayramiç"; }
+if ($myrow['ilce']=="17053") { echo "Biga"; }
+if ($myrow['ilce']=="17054") { echo "Bozcaada"; }
+if ($myrow['ilce']=="17055") { echo "Çan"; }
+if ($myrow['ilce']=="17056") { echo "Eceabat"; }
+if ($myrow['ilce']=="17057") { echo "Ezine"; }
+if ($myrow['ilce']=="17058") { echo "Gelibolu"; }
+if ($myrow['ilce']=="17059") { echo "Gökçeada (Ýmroz)"; }
+if ($myrow['ilce']=="17060") { echo "Lapseki"; }
+if ($myrow['ilce']=="17061") { echo "Yenice"; }
+if ($myrow['ilce']=="18001") { echo "Merkez"; }
+if ($myrow['ilce']=="18051") { echo "Atkaracalar"; }
+if ($myrow['ilce']=="18052") { echo "Bayramören"; }
+if ($myrow['ilce']=="18053") { echo "Çerkeþ"; }
+if ($myrow['ilce']=="18054") { echo "Eldivan"; }
+if ($myrow['ilce']=="18055") { echo "Ilgaz"; }
+if ($myrow['ilce']=="18056") { echo "Kýzýlýrmak"; }
+if ($myrow['ilce']=="18057") { echo "Korgun"; }
+if ($myrow['ilce']=="18058") { echo "Kurþunlu"; }
+if ($myrow['ilce']=="18059") { echo "Orta"; }
+if ($myrow['ilce']=="18060") { echo "Þabanözü"; }
+if ($myrow['ilce']=="18061") { echo "Yapraklý"; }
+if ($myrow['ilce']=="19001") { echo "Merkez"; }
+if ($myrow['ilce']=="19051") { echo "Alaca"; }
+if ($myrow['ilce']=="19052") { echo "Bayat"; }
+if ($myrow['ilce']=="19053") { echo "Boðazkale"; }
+if ($myrow['ilce']=="19054") { echo "Dodurga"; }
+if ($myrow['ilce']=="19055") { echo "Ýskilip"; }
+if ($myrow['ilce']=="19056") { echo "Kargý"; }
+if ($myrow['ilce']=="19057") { echo "Laçin"; }
+if ($myrow['ilce']=="19058") { echo "Mecitözü"; }
+if ($myrow['ilce']=="19059") { echo "Karaören (Oðuzlar)"; }
+if ($myrow['ilce']=="19060") { echo "Ortaköy"; }
+if ($myrow['ilce']=="19061") { echo "Osmancýk"; }
+if ($myrow['ilce']=="19062") { echo "Sungurlu"; }
+if ($myrow['ilce']=="19063") { echo "Uðurludað"; }
+if ($myrow['ilce']=="20001") { echo "Merkez"; }
+if ($myrow['ilce']=="20051") { echo "Acýpayam"; }
+if ($myrow['ilce']=="20052") { echo "Akköy"; }
+if ($myrow['ilce']=="20053") { echo "Babadað"; }
+if ($myrow['ilce']=="20054") { echo "Baklan"; }
+if ($myrow['ilce']=="20055") { echo "Bekilli"; }
+if ($myrow['ilce']=="20056") { echo "Beyaðaç"; }
+if ($myrow['ilce']=="20057") { echo "Bozkurt"; }
+if ($myrow['ilce']=="20058") { echo "Buldan"; }
+if ($myrow['ilce']=="20059") { echo "Çal"; }
+if ($myrow['ilce']=="20060") { echo "Çameli"; }
+if ($myrow['ilce']=="20061") { echo "Çardak"; }
+if ($myrow['ilce']=="20062") { echo "Çivril"; }
+if ($myrow['ilce']=="20063") { echo "Güney"; }
+if ($myrow['ilce']=="20064") { echo "Honaz"; }
+if ($myrow['ilce']=="20065") { echo "Kale"; }
+if ($myrow['ilce']=="20066") { echo "Sarayköy"; }
+if ($myrow['ilce']=="20067") { echo "Serinhisar"; }
+if ($myrow['ilce']=="20068") { echo "Tavas"; }
+if ($myrow['ilce']=="21001") { echo "Merkez"; }
+if ($myrow['ilce']=="21051") { echo "Bismil"; }
+if ($myrow['ilce']=="21052") { echo "Çermik"; }
+if ($myrow['ilce']=="21053") { echo "Çýnar"; }
+if ($myrow['ilce']=="21054") { echo "Çüngüþ"; }
+if ($myrow['ilce']=="21055") { echo "Dicle"; }
+if ($myrow['ilce']=="21056") { echo "Eðil"; }
+if ($myrow['ilce']=="21057") { echo "Ergani"; }
+if ($myrow['ilce']=="21058") { echo "Hani"; }
+if ($myrow['ilce']=="21059") { echo "Hazro"; }
+if ($myrow['ilce']=="21060") { echo "Kocaköy"; }
+if ($myrow['ilce']=="21061") { echo "Kulp"; }
+if ($myrow['ilce']=="21062") { echo "Lice"; }
+if ($myrow['ilce']=="21063") { echo "Silvan"; }
+if ($myrow['ilce']=="22001") { echo "Merkez"; }
+if ($myrow['ilce']=="22051") { echo "Enez"; }
+if ($myrow['ilce']=="22052") { echo "Havsa"; }
+if ($myrow['ilce']=="22053") { echo "Ýpsala"; }
+if ($myrow['ilce']=="22054") { echo "Keþan"; }
+if ($myrow['ilce']=="22055") { echo "Lalapaþa"; }
+if ($myrow['ilce']=="22056") { echo "Meriç"; }
+if ($myrow['ilce']=="22057") { echo "Süleoðlu"; }
+if ($myrow['ilce']=="22058") { echo "Uzunköprü"; }
+if ($myrow['ilce']=="23001") { echo "Merkez"; }
+if ($myrow['ilce']=="23051") { echo "Aðýn"; }
+if ($myrow['ilce']=="23052") { echo "Alacakaya"; }
+if ($myrow['ilce']=="23053") { echo "Arýcak"; }
+if ($myrow['ilce']=="23054") { echo "Baskil"; }
+if ($myrow['ilce']=="23055") { echo "Karakoçan"; }
+if ($myrow['ilce']=="23056") { echo "Keban"; }
+if ($myrow['ilce']=="23057") { echo "Kovancýlar"; }
+if ($myrow['ilce']=="23058") { echo "Maden"; }
+if ($myrow['ilce']=="23059") { echo "Palu"; }
+if ($myrow['ilce']=="23060") { echo "Sivrice"; }
+if ($myrow['ilce']=="24001") { echo "Merkez"; }
+if ($myrow['ilce']=="24051") { echo "Çayýrlý"; }
+if ($myrow['ilce']=="24052") { echo "Ilýç"; }
+if ($myrow['ilce']=="24053") { echo "Kemah"; }
+if ($myrow['ilce']=="24054") { echo "Kemaliye"; }
+if ($myrow['ilce']=="24055") { echo "Otlukbeli"; }
+if ($myrow['ilce']=="24056") { echo "Refahiye"; }
+if ($myrow['ilce']=="24057") { echo "Tercan"; }
+if ($myrow['ilce']=="24058") { echo "Üzümlü"; }
+if ($myrow['ilce']=="25001") { echo "Merkez"; }
+if ($myrow['ilce']=="25051") { echo "Aþkale"; }
+if ($myrow['ilce']=="25052") { echo "Çat"; }
+if ($myrow['ilce']=="25053") { echo "Hýnýs"; }
+if ($myrow['ilce']=="25054") { echo "Horasan"; }
+if ($myrow['ilce']=="25055") { echo "Ilýca"; }
+if ($myrow['ilce']=="25056") { echo "Ýspir"; }
+if ($myrow['ilce']=="25057") { echo "Karaçoban"; }
+if ($myrow['ilce']=="25058") { echo "Karayazý"; }
+if ($myrow['ilce']=="25059") { echo "Köprüköy"; }
+if ($myrow['ilce']=="25060") { echo "Narman"; }
+if ($myrow['ilce']=="25061") { echo "Oltu"; }
+if ($myrow['ilce']=="25062") { echo "Olur"; }
+if ($myrow['ilce']=="25063") { echo "Pasinler"; }
+if ($myrow['ilce']=="25064") { echo "Pazaryolu"; }
+if ($myrow['ilce']=="25065") { echo "Þenkaya"; }
+if ($myrow['ilce']=="25066") { echo "Tekman"; }
+if ($myrow['ilce']=="25067") { echo "Tortum"; }
+if ($myrow['ilce']=="25068") { echo "Uzundere"; }
+if ($myrow['ilce']=="26001") { echo "Merkez"; }
+if ($myrow['ilce']=="26051") { echo "Alpu"; }
+if ($myrow['ilce']=="26052") { echo "Beylikova"; }
+if ($myrow['ilce']=="26053") { echo "Çifteler"; }
+if ($myrow['ilce']=="26054") { echo "Günyüzü"; }
+if ($myrow['ilce']=="26055") { echo "Han"; }
+if ($myrow['ilce']=="26056") { echo "Ýnönü"; }
+if ($myrow['ilce']=="26057") { echo "Mahmudiye"; }
+if ($myrow['ilce']=="26058") { echo "Mihalgazi"; }
+if ($myrow['ilce']=="26059") { echo "Mihalýççýk"; }
+if ($myrow['ilce']=="26060") { echo "Sarýcakaya"; }
+if ($myrow['ilce']=="26061") { echo "Seyitgazi"; }
+if ($myrow['ilce']=="26062") { echo "Sivrihisar"; }
+if ($myrow['ilce']=="27001") { echo "Þahinbey"; }
+if ($myrow['ilce']=="27002") { echo "Þehitkamil"; }
+if ($myrow['ilce']=="27051") { echo "Araban"; }
+if ($myrow['ilce']=="27052") { echo "Ýslahiye"; }
+if ($myrow['ilce']=="27053") { echo "Karkamýþ"; }
+if ($myrow['ilce']=="27054") { echo "Nizip"; }
+if ($myrow['ilce']=="27055") { echo "Nurdaðý"; }
+if ($myrow['ilce']=="27056") { echo "Oðuzeli"; }
+if ($myrow['ilce']=="27057") { echo "Yavuzeli"; }
+if ($myrow['ilce']=="28001") { echo "Merkez"; }
+if ($myrow['ilce']=="28051") { echo "Alucra"; }
+if ($myrow['ilce']=="28052") { echo "Bulancak"; }
+if ($myrow['ilce']=="28053") { echo "Çamoluk"; }
+if ($myrow['ilce']=="28054") { echo "Çanakçý"; }
+if ($myrow['ilce']=="28055") { echo "Dereli"; }
+if ($myrow['ilce']=="28056") { echo "Doðankent"; }
+if ($myrow['ilce']=="28057") { echo "Espiye"; }
+if ($myrow['ilce']=="28058") { echo "Eynesil"; }
+if ($myrow['ilce']=="28059") { echo "Görele"; }
+if ($myrow['ilce']=="28060") { echo "Güce"; }
+if ($myrow['ilce']=="28061") { echo "Keþap"; }
+if ($myrow['ilce']=="28062") { echo "Piraziz"; }
+if ($myrow['ilce']=="28063") { echo "Þebinkarahisar"; }
+if ($myrow['ilce']=="28064") { echo "Tirebolu"; }
+if ($myrow['ilce']=="28065") { echo "Yaðlýdere"; }
+if ($myrow['ilce']=="29001") { echo "Merkez"; }
+if ($myrow['ilce']=="29051") { echo "Kelkit"; }
+if ($myrow['ilce']=="29052") { echo "Köse"; }
+if ($myrow['ilce']=="29053") { echo "Kürtün"; }
+if ($myrow['ilce']=="29054") { echo "Þiran"; }
+if ($myrow['ilce']=="29055") { echo "Torul"; }
+if ($myrow['ilce']=="30001") { echo "Çölemerik"; }
+if ($myrow['ilce']=="30051") { echo "Çukurca"; }
+if ($myrow['ilce']=="30052") { echo "Þemdinli"; }
+if ($myrow['ilce']=="30053") { echo "Yüksekova"; }
+if ($myrow['ilce']=="31001") { echo "Antakya"; }
+if ($myrow['ilce']=="31051") { echo "Altýnözü"; }
+if ($myrow['ilce']=="31052") { echo "Belen"; }
+if ($myrow['ilce']=="31053") { echo "Dörtyol"; }
+if ($myrow['ilce']=="31054") { echo "Erzin"; }
+if ($myrow['ilce']=="31055") { echo "Hassa"; }
+if ($myrow['ilce']=="31056") { echo "Ýskenderun"; }
+if ($myrow['ilce']=="31057") { echo "Kýrýkhan"; }
+if ($myrow['ilce']=="31058") { echo "Kumlu"; }
+if ($myrow['ilce']=="31059") { echo "Reyhanlý"; }
+if ($myrow['ilce']=="31060") { echo "Samandað"; }
+if ($myrow['ilce']=="31061") { echo "Yayladaðý"; }
+if ($myrow['ilce']=="32001") { echo "Merkez"; }
+if ($myrow['ilce']=="32051") { echo "Aksu"; }
+if ($myrow['ilce']=="32052") { echo "Atabey"; }
+if ($myrow['ilce']=="32053") { echo "Eðridir"; }
+if ($myrow['ilce']=="32054") { echo "Gelendost"; }
+if ($myrow['ilce']=="32055") { echo "Gönen"; }
+if ($myrow['ilce']=="32056") { echo "Keçiborlu"; }
+if ($myrow['ilce']=="32057") { echo "Senirkent"; }
+if ($myrow['ilce']=="32058") { echo "Sütçüler"; }
+if ($myrow['ilce']=="32059") { echo "Þarkikaraaðaç"; }
+if ($myrow['ilce']=="32060") { echo "Uluborlu"; }
+if ($myrow['ilce']=="32061") { echo "Yalvaç"; }
+if ($myrow['ilce']=="32062") { echo "Yeniþarbademli"; }
+if ($myrow['ilce']=="33001") { echo "Akdeniz"; }
+if ($myrow['ilce']=="33002") { echo "Yeniþehir"; }
+if ($myrow['ilce']=="33003") { echo "Toroslar"; }
+if ($myrow['ilce']=="33051") { echo "Anamur"; }
+if ($myrow['ilce']=="33052") { echo "Aydýncýk"; }
+if ($myrow['ilce']=="33053") { echo "Bozyazý"; }
+if ($myrow['ilce']=="33054") { echo "Çamlýyayla"; }
+if ($myrow['ilce']=="33055") { echo "Erdemli"; }
+if ($myrow['ilce']=="33056") { echo "Gülnar"; }
+if ($myrow['ilce']=="33057") { echo "Mut"; }
+if ($myrow['ilce']=="33058") { echo "Silifke"; }
+if ($myrow['ilce']=="33059") { echo "Tarsus"; }
+if ($myrow['ilce']=="34001") { echo "Bakýrköy"; }
+if ($myrow['ilce']=="34002") { echo "Bayrampaþa"; }
+if ($myrow['ilce']=="34003") { echo "Beþiktaþ"; }
+if ($myrow['ilce']=="34004") { echo "Beyoðlu"; }
+if ($myrow['ilce']=="34005") { echo "Eminönü"; }
+if ($myrow['ilce']=="34006") { echo "Eyüp"; }
+if ($myrow['ilce']=="34007") { echo "Fatih"; }
+if ($myrow['ilce']=="34008") { echo "Gaziosmanpaþa"; }
+if ($myrow['ilce']=="34009") { echo "Kaðýthane"; }
+if ($myrow['ilce']=="34010") { echo "Küçükçekmece"; }
+if ($myrow['ilce']=="34011") { echo "Sarýyer"; }
+if ($myrow['ilce']=="34012") { echo "Þiþli"; }
+if ($myrow['ilce']=="34013") { echo "Zeytinburnu"; }
+if ($myrow['ilce']=="34014") { echo "Avcýlar"; }
+if ($myrow['ilce']=="34015") { echo "Güngören"; }
+if ($myrow['ilce']=="34016") { echo "Bahçelievler"; }
+if ($myrow['ilce']=="34017") { echo "Baðcýlar"; }
+if ($myrow['ilce']=="34018") { echo "Esenler"; }
+if ($myrow['ilce']=="34031") { echo "Adalar"; }
+if ($myrow['ilce']=="34032") { echo "Beykoz"; }
+if ($myrow['ilce']=="34033") { echo "Kadýköy"; }
+if ($myrow['ilce']=="34034") { echo "Kartal"; }
+if ($myrow['ilce']=="34035") { echo "Pendik"; }
+if ($myrow['ilce']=="34036") { echo "Ümraniye"; }
+if ($myrow['ilce']=="34037") { echo "Üsküdar"; }
+if ($myrow['ilce']=="34038") { echo "Tuzla"; }
+if ($myrow['ilce']=="34039") { echo "Maltepe"; }
+if ($myrow['ilce']=="34051") { echo "Büyükçekmece"; }
+if ($myrow['ilce']=="34052") { echo "Çatalca"; }
+if ($myrow['ilce']=="34053") { echo "Silivri"; }
+if ($myrow['ilce']=="34071") { echo "Þile"; }
+if ($myrow['ilce']=="34072") { echo "Sultanbeyli"; }
+if ($myrow['ilce']=="35001") { echo "Balçova"; }
+if ($myrow['ilce']=="35002") { echo "Bornova"; }
+if ($myrow['ilce']=="35003") { echo "Buca"; }
+if ($myrow['ilce']=="35004") { echo "Çiðli"; }
+if ($myrow['ilce']=="35005") { echo "Gaziemir"; }
+if ($myrow['ilce']=="35006") { echo "Güzelbahçe"; }
+if ($myrow['ilce']=="35007") { echo "Karþýyaka"; }
+if ($myrow['ilce']=="35008") { echo "Konak"; }
+if ($myrow['ilce']=="35009") { echo "Narlýdere"; }
+if ($myrow['ilce']=="35051") { echo "Aliaða"; }
+if ($myrow['ilce']=="35052") { echo "Bayýndýr"; }
+if ($myrow['ilce']=="35053") { echo "Bergama"; }
+if ($myrow['ilce']=="35054") { echo "Beydað"; }
+if ($myrow['ilce']=="35055") { echo "Çeþme"; }
+if ($myrow['ilce']=="35056") { echo "Dikili"; }
+if ($myrow['ilce']=="35057") { echo "Foça"; }
+if ($myrow['ilce']=="35058") { echo "Karaburun"; }
+if ($myrow['ilce']=="35059") { echo "Kemalpaþa"; }
+if ($myrow['ilce']=="35060") { echo "Kýnýk"; }
+if ($myrow['ilce']=="35061") { echo "Kiraz"; }
+if ($myrow['ilce']=="35062") { echo "Cumaovasý (Menderes)"; }
+if ($myrow['ilce']=="35063") { echo "Menemen"; }
+if ($myrow['ilce']=="35064") { echo "Ödemiþ"; }
+if ($myrow['ilce']=="35065") { echo "Seferihisar"; }
+if ($myrow['ilce']=="35066") { echo "Selçuk"; }
+if ($myrow['ilce']=="35067") { echo "Tire"; }
+if ($myrow['ilce']=="35068") { echo "Torbalý"; }
+if ($myrow['ilce']=="35069") { echo "Urla"; }
+if ($myrow['ilce']=="36001") { echo "Merkez"; }
+if ($myrow['ilce']=="36051") { echo "Akyaka"; }
+if ($myrow['ilce']=="36052") { echo "Arpaçay"; }
+if ($myrow['ilce']=="36053") { echo "Digor"; }
+if ($myrow['ilce']=="36054") { echo "Kaðýzman"; }
+if ($myrow['ilce']=="36055") { echo "Sarýkamýþ"; }
+if ($myrow['ilce']=="36056") { echo "Selim"; }
+if ($myrow['ilce']=="36057") { echo "Susuz"; }
+if ($myrow['ilce']=="37001") { echo "Merkez"; }
+if ($myrow['ilce']=="37051") { echo "Abana"; }
+if ($myrow['ilce']=="37052") { echo "Aðlý"; }
+if ($myrow['ilce']=="37053") { echo "Araç"; }
+if ($myrow['ilce']=="37054") { echo "Azdavay"; }
+if ($myrow['ilce']=="37055") { echo "Bozkurt"; }
+if ($myrow['ilce']=="37056") { echo "Cide"; }
+if ($myrow['ilce']=="37057") { echo "Çatalzeytin"; }
+if ($myrow['ilce']=="37058") { echo "Daday"; }
+if ($myrow['ilce']=="37059") { echo "Devrekani"; }
+if ($myrow['ilce']=="37060") { echo "Doðanyurt"; }
+if ($myrow['ilce']=="37061") { echo "Gökçeaðaç (Hanönü)"; }
+if ($myrow['ilce']=="37062") { echo "Ýhsangazi"; }
+if ($myrow['ilce']=="37063") { echo "Ýnebolu"; }
+if ($myrow['ilce']=="37064") { echo "Küre"; }
+if ($myrow['ilce']=="37065") { echo "Pýnarbaþý"; }
+if ($myrow['ilce']=="37066") { echo "Seydiler"; }
+if ($myrow['ilce']=="37067") { echo "Þenpazar"; }
+if ($myrow['ilce']=="37068") { echo "Taþköprü"; }
+if ($myrow['ilce']=="37069") { echo "Tosya"; }
+if ($myrow['ilce']=="38001") { echo "Kocasinan"; }
+if ($myrow['ilce']=="38002") { echo "Melikgazi"; }
+if ($myrow['ilce']=="38051") { echo "Akkýþla"; }
+if ($myrow['ilce']=="38052") { echo "Bünyan"; }
+if ($myrow['ilce']=="38053") { echo "Develi"; }
+if ($myrow['ilce']=="38054") { echo "Felahiye"; }
+if ($myrow['ilce']=="38055") { echo "Hacýlar"; }
+if ($myrow['ilce']=="38056") { echo "Ýncesu"; }
+if ($myrow['ilce']=="38057") { echo "Çukur (Özvatan)"; }
+if ($myrow['ilce']=="38058") { echo "Pýnarbaþý"; }
+if ($myrow['ilce']=="38059") { echo "Sarýoðlan"; }
+if ($myrow['ilce']=="38060") { echo "Sarýz"; }
+if ($myrow['ilce']=="38061") { echo "Talas"; }
+if ($myrow['ilce']=="38062") { echo "Tomarza"; }
+if ($myrow['ilce']=="38063") { echo "Yahyalý"; }
+if ($myrow['ilce']=="38064") { echo "Yeþilhisar"; }
+if ($myrow['ilce']=="39001") { echo "Merkez"; }
+if ($myrow['ilce']=="39051") { echo "Babaeski"; }
+if ($myrow['ilce']=="39052") { echo "Demirköy"; }
+if ($myrow['ilce']=="39053") { echo "Kofçaz"; }
+if ($myrow['ilce']=="39054") { echo "Lüleburgaz"; }
+if ($myrow['ilce']=="39055") { echo "Pehlivanköy"; }
+if ($myrow['ilce']=="39056") { echo "Pýnarhisar"; }
+if ($myrow['ilce']=="39057") { echo "Vize"; }
+if ($myrow['ilce']=="40001") { echo "Merkez"; }
+if ($myrow['ilce']=="40051") { echo "Akçakent"; }
+if ($myrow['ilce']=="40052") { echo "Akpýnar"; }
+if ($myrow['ilce']=="40053") { echo "Boztepe"; }
+if ($myrow['ilce']=="40054") { echo "Çiçekdaðý"; }
+if ($myrow['ilce']=="40055") { echo "Kaman"; }
+if ($myrow['ilce']=="40056") { echo "Mucur"; }
+if ($myrow['ilce']=="41001") { echo "Ýzmit"; }
+if ($myrow['ilce']=="41051") { echo "Gebze"; }
+if ($myrow['ilce']=="41052") { echo "Gölcük"; }
+if ($myrow['ilce']=="41053") { echo "Kandýra"; }
+if ($myrow['ilce']=="41054") { echo "Karamürsel"; }
+if ($myrow['ilce']=="41055") { echo "Körfez (Tütünçiftlik)"; }
+if ($myrow['ilce']=="41056") { echo "Derince"; }
+if ($myrow['ilce']=="42001") { echo "Karatay"; }
+if ($myrow['ilce']=="42002") { echo "Meram"; }
+if ($myrow['ilce']=="42003") { echo "Selçuklu"; }
+if ($myrow['ilce']=="42051") { echo "Ahýrlý"; }
+if ($myrow['ilce']=="42052") { echo "Akören"; }
+if ($myrow['ilce']=="42053") { echo "Akþehir"; }
+if ($myrow['ilce']=="42054") { echo "Altýnekin"; }
+if ($myrow['ilce']=="42055") { echo "Beyþehir"; }
+if ($myrow['ilce']=="42056") { echo "Bozkýr"; }
+if ($myrow['ilce']=="42057") { echo "Cihanbeyli"; }
+if ($myrow['ilce']=="42058") { echo "Çeltik"; }
+if ($myrow['ilce']=="42059") { echo "Çumra"; }
+if ($myrow['ilce']=="42060") { echo "Derbent"; }
+if ($myrow['ilce']=="42061") { echo "Derebucak"; }
+if ($myrow['ilce']=="42062") { echo "Doðanhisar"; }
+if ($myrow['ilce']=="42063") { echo "Emirgazi"; }
+if ($myrow['ilce']=="42064") { echo "Ereðli"; }
+if ($myrow['ilce']=="42065") { echo "Güneysýnýr"; }
+if ($myrow['ilce']=="42066") { echo "Hadým"; }
+if ($myrow['ilce']=="42067") { echo "Halkapýnar"; }
+if ($myrow['ilce']=="42068") { echo "Hüyük"; }
+if ($myrow['ilce']=="42069") { echo "Ilgýn"; }
+if ($myrow['ilce']=="42070") { echo "Kadýnhaný"; }
+if ($myrow['ilce']=="42071") { echo "Karapýnar"; }
+if ($myrow['ilce']=="42072") { echo "Kulu"; }
+if ($myrow['ilce']=="42073") { echo "Sarayönü"; }
+if ($myrow['ilce']=="42074") { echo "Seydiþehir"; }
+if ($myrow['ilce']=="42075") { echo "Taþkent"; }
+if ($myrow['ilce']=="42076") { echo "Tuzlukçu"; }
+if ($myrow['ilce']=="42077") { echo "Yalýhüyük"; }
+if ($myrow['ilce']=="42078") { echo "Yunak"; }
+if ($myrow['ilce']=="43001") { echo "Merkez"; }
+if ($myrow['ilce']=="43051") { echo "Altýntaþ"; }
+if ($myrow['ilce']=="43052") { echo "Aslanapa"; }
+if ($myrow['ilce']=="43053") { echo "Çavdarhisar"; }
+if ($myrow['ilce']=="43054") { echo "Domaniç"; }
+if ($myrow['ilce']=="43055") { echo "Dumlupýnar"; }
+if ($myrow['ilce']=="43056") { echo "Emet"; }
+if ($myrow['ilce']=="43057") { echo "Gediz"; }
+if ($myrow['ilce']=="43058") { echo "Hisarcýk"; }
+if ($myrow['ilce']=="43059") { echo "Pazarlar"; }
+if ($myrow['ilce']=="43060") { echo "Simav"; }
+if ($myrow['ilce']=="43061") { echo "Þaphane"; }
+if ($myrow['ilce']=="43062") { echo "Tavþanlý"; }
+if ($myrow['ilce']=="43063") { echo "Tunçbilek"; }
+if ($myrow['ilce']=="44001") { echo "Merkez"; }
+if ($myrow['ilce']=="44051") { echo "Akçadað"; }
+if ($myrow['ilce']=="44052") { echo "Arapkir"; }
+if ($myrow['ilce']=="44053") { echo "Arguvan"; }
+if ($myrow['ilce']=="44054") { echo "Battalgazi"; }
+if ($myrow['ilce']=="44055") { echo "Darende"; }
+if ($myrow['ilce']=="44056") { echo "Doðanþehir"; }
+if ($myrow['ilce']=="44057") { echo "Doðanyol"; }
+if ($myrow['ilce']=="44058") { echo "Hekimhan"; }
+if ($myrow['ilce']=="44059") { echo "Kale"; }
+if ($myrow['ilce']=="44060") { echo "Kuluncak"; }
+if ($myrow['ilce']=="44061") { echo "Pütürge"; }
+if ($myrow['ilce']=="44062") { echo "Yazýhan"; }
+if ($myrow['ilce']=="44063") { echo "Yeþilyurt"; }
+if ($myrow['ilce']=="45001") { echo "Merkez"; }
+if ($myrow['ilce']=="45051") { echo "Ahmetli"; }
+if ($myrow['ilce']=="45052") { echo "Akhisar"; }
+if ($myrow['ilce']=="45053") { echo "Alaþehir"; }
+if ($myrow['ilce']=="45054") { echo "Demirci"; }
+if ($myrow['ilce']=="45055") { echo "Gölmarmara"; }
+if ($myrow['ilce']=="45056") { echo "Gördes"; }
+if ($myrow['ilce']=="45057") { echo "Kýrkaðaç"; }
+if ($myrow['ilce']=="45058") { echo "Köprübaþý"; }
+if ($myrow['ilce']=="45059") { echo "Kula"; }
+if ($myrow['ilce']=="45060") { echo "Salihli"; }
+if ($myrow['ilce']=="45061") { echo "Sarýgöl"; }
+if ($myrow['ilce']=="45062") { echo "Saruhanlý"; }
+if ($myrow['ilce']=="45063") { echo "Selendi"; }
+if ($myrow['ilce']=="45064") { echo "Soma"; }
+if ($myrow['ilce']=="45065") { echo "Turgutlu"; }
+if ($myrow['ilce']=="46001") { echo "Merkez"; }
+if ($myrow['ilce']=="46051") { echo "Afþin"; }
+if ($myrow['ilce']=="46052") { echo "Andýrýn"; }
+if ($myrow['ilce']=="46053") { echo "Çaðlayancerit"; }
+if ($myrow['ilce']=="46054") { echo "Ekinözü"; }
+if ($myrow['ilce']=="46055") { echo "Elbistan"; }
+if ($myrow['ilce']=="46056") { echo "Göksun"; }
+if ($myrow['ilce']=="46057") { echo "Nurhak"; }
+if ($myrow['ilce']=="46058") { echo "Pazarcýk"; }
+if ($myrow['ilce']=="46059") { echo "Türkoðlu"; }
+if ($myrow['ilce']=="47001") { echo "Merkez"; }
+if ($myrow['ilce']=="47051") { echo "Dargeçit"; }
+if ($myrow['ilce']=="47052") { echo "Derik"; }
+if ($myrow['ilce']=="47053") { echo "Kýzýltepe"; }
+if ($myrow['ilce']=="47054") { echo "Mazýdaðý"; }
+if ($myrow['ilce']=="47055") { echo "Midyat"; }
+if ($myrow['ilce']=="47056") { echo "Nusaybin"; }
+if ($myrow['ilce']=="47057") { echo "Ömerli"; }
+if ($myrow['ilce']=="47058") { echo "Savur"; }
+if ($myrow['ilce']=="47059") { echo "Yeþilli"; }
+if ($myrow['ilce']=="48001") { echo "Merkez"; }
+if ($myrow['ilce']=="48051") { echo "Bodrum"; }
+if ($myrow['ilce']=="48052") { echo "Dalaman"; }
+if ($myrow['ilce']=="48053") { echo "Datça"; }
+if ($myrow['ilce']=="48054") { echo "Fethiye"; }
+if ($myrow['ilce']=="48055") { echo "Kavaklýdere"; }
+if ($myrow['ilce']=="48056") { echo "Köyceðiz"; }
+if ($myrow['ilce']=="48057") { echo "Marmaris"; }
+if ($myrow['ilce']=="48058") { echo "Milas"; }
+if ($myrow['ilce']=="48059") { echo "Ortaca"; }
+if ($myrow['ilce']=="48060") { echo "Ula"; }
+if ($myrow['ilce']=="48061") { echo "Yataðan"; }
+if ($myrow['ilce']=="49001") { echo "Merkez"; }
+if ($myrow['ilce']=="49051") { echo "Bulanýk"; }
+if ($myrow['ilce']=="49052") { echo "Hasköy"; }
+if ($myrow['ilce']=="49053") { echo "Korkut"; }
+if ($myrow['ilce']=="49054") { echo "Malazgirt"; }
+if ($myrow['ilce']=="49055") { echo "Varto"; }
+if ($myrow['ilce']=="50001") { echo "Merkez"; }
+if ($myrow['ilce']=="50051") { echo "Acýgöl"; }
+if ($myrow['ilce']=="50052") { echo "Avanos"; }
+if ($myrow['ilce']=="50053") { echo "Derinkuyu"; }
+if ($myrow['ilce']=="50054") { echo "Gülþehir"; }
+if ($myrow['ilce']=="50055") { echo "Hacýbektaþ"; }
+if ($myrow['ilce']=="50056") { echo "Kozaklý"; }
+if ($myrow['ilce']=="50057") { echo "Ürgüp"; }
+if ($myrow['ilce']=="51001") { echo "Merkez"; }
+if ($myrow['ilce']=="51051") { echo "Altunhisar"; }
+if ($myrow['ilce']=="51052") { echo "Bor"; }
+if ($myrow['ilce']=="51053") { echo "Çamardý"; }
+if ($myrow['ilce']=="51054") { echo "Çiftlik (Özyurt)"; }
+if ($myrow['ilce']=="51055") { echo "Ulukýþla"; }
+if ($myrow['ilce']=="52001") { echo "Merkez"; }
+if ($myrow['ilce']=="52051") { echo "Akkuþ"; }
+if ($myrow['ilce']=="52052") { echo "Aybastý"; }
+if ($myrow['ilce']=="52053") { echo "Çamaþ"; }
+if ($myrow['ilce']=="52054") { echo "Çatalpýnar"; }
+if ($myrow['ilce']=="52055") { echo "Çaybaþý"; }
+if ($myrow['ilce']=="52056") { echo "Fatsa"; }
+if ($myrow['ilce']=="52057") { echo "Gölköy"; }
+if ($myrow['ilce']=="52058") { echo "Gülyalý"; }
+if ($myrow['ilce']=="52059") { echo "Gürgentepe"; }
+if ($myrow['ilce']=="52060") { echo "Ýkizce"; }
+if ($myrow['ilce']=="52061") { echo "Kabadüz"; }
+if ($myrow['ilce']=="52062") { echo "Kabataþ"; }
+if ($myrow['ilce']=="52063") { echo "Korgan"; }
+if ($myrow['ilce']=="52064") { echo "Kumru"; }
+if ($myrow['ilce']=="52065") { echo "Mesudiye"; }
+if ($myrow['ilce']=="52066") { echo "Perþembe"; }
+if ($myrow['ilce']=="52067") { echo "Ulubey"; }
+if ($myrow['ilce']=="52068") { echo "Ünye"; }
+if ($myrow['ilce']=="53001") { echo "Merkez"; }
+if ($myrow['ilce']=="53051") { echo "Ardeþen"; }
+if ($myrow['ilce']=="53052") { echo "Çamlýhemþin"; }
+if ($myrow['ilce']=="53053") { echo "Çayeli"; }
+if ($myrow['ilce']=="53054") { echo "Derepazarý"; }
+if ($myrow['ilce']=="53055") { echo "Fýndýklý"; }
+if ($myrow['ilce']=="53056") { echo "Güneysu"; }
+if ($myrow['ilce']=="53057") { echo "Hemþin"; }
+if ($myrow['ilce']=="53058") { echo "Ýkizdere"; }
+if ($myrow['ilce']=="53059") { echo "Ýyidere"; }
+if ($myrow['ilce']=="53060") { echo "Kalkandere"; }
+if ($myrow['ilce']=="53061") { echo "Pazar"; }
+if ($myrow['ilce']=="54001") { echo "Adapazarý"; }
+if ($myrow['ilce']=="54051") { echo "Akyazý"; }
+if ($myrow['ilce']=="54052") { echo "Ferizli"; }
+if ($myrow['ilce']=="54053") { echo "Geyve"; }
+if ($myrow['ilce']=="54054") { echo "Hendek"; }
+if ($myrow['ilce']=="54055") { echo "Karapürçek"; }
+if ($myrow['ilce']=="54056") { echo "Karasu"; }
+if ($myrow['ilce']=="54057") { echo "Kaynarca"; }
+if ($myrow['ilce']=="54058") { echo "Kocaali"; }
+if ($myrow['ilce']=="54059") { echo "Pamukova"; }
+if ($myrow['ilce']=="54060") { echo "Sapanca"; }
+if ($myrow['ilce']=="54061") { echo "Söðütlü"; }
+if ($myrow['ilce']=="54062") { echo "Taraklý"; }
+if ($myrow['ilce']=="55001") { echo "Merkez"; }
+if ($myrow['ilce']=="55051") { echo "Alaçam"; }
+if ($myrow['ilce']=="55052") { echo "Asarcýk"; }
+if ($myrow['ilce']=="55053") { echo "Ayvacýk"; }
+if ($myrow['ilce']=="55054") { echo "Bafra"; }
+if ($myrow['ilce']=="55055") { echo "Çarþamba"; }
+if ($myrow['ilce']=="55056") { echo "Havza"; }
+if ($myrow['ilce']=="55057") { echo "Kavak"; }
+if ($myrow['ilce']=="55058") { echo "Ladik"; }
+if ($myrow['ilce']=="55059") { echo "19 Mayýs (Ballýca)"; }
+if ($myrow['ilce']=="55060") { echo "Salýpazarý"; }
+if ($myrow['ilce']=="55061") { echo "Tekkeköy"; }
+if ($myrow['ilce']=="55062") { echo "Terme"; }
+if ($myrow['ilce']=="55063") { echo "Vezirköprü"; }
+if ($myrow['ilce']=="55064") { echo "Yakakent"; }
+if ($myrow['ilce']=="56001") { echo "Merkez"; }
+if ($myrow['ilce']=="56051") { echo "Aydýnlar"; }
+if ($myrow['ilce']=="56052") { echo "Baykan"; }
+if ($myrow['ilce']=="56053") { echo "Eruh"; }
+if ($myrow['ilce']=="56054") { echo "Kurtalan"; }
+if ($myrow['ilce']=="56055") { echo "Pervari"; }
+if ($myrow['ilce']=="56056") { echo "Þirvan"; }
+if ($myrow['ilce']=="57001") { echo "Merkez"; }
+if ($myrow['ilce']=="57051") { echo "Ayancýk"; }
+if ($myrow['ilce']=="57052") { echo "Boyabat"; }
+if ($myrow['ilce']=="57053") { echo "Dikmen"; }
+if ($myrow['ilce']=="57054") { echo "Duraðan"; }
+if ($myrow['ilce']=="57055") { echo "Erfelek"; }
+if ($myrow['ilce']=="57056") { echo "Gerze"; }
+if ($myrow['ilce']=="57057") { echo "Saraydüzü"; }
+if ($myrow['ilce']=="57058") { echo "Türkeli"; }
+if ($myrow['ilce']=="58001") { echo "Merkez"; }
+if ($myrow['ilce']=="58051") { echo "Akýncýlar"; }
+if ($myrow['ilce']=="58052") { echo "Altýnyayla"; }
+if ($myrow['ilce']=="58053") { echo "Divriði"; }
+if ($myrow['ilce']=="58054") { echo "Doðanþar"; }
+if ($myrow['ilce']=="58055") { echo "Gemerek"; }
+if ($myrow['ilce']=="58056") { echo "Gölova"; }
+if ($myrow['ilce']=="58057") { echo "Gürün"; }
+if ($myrow['ilce']=="58058") { echo "Hafik"; }
+if ($myrow['ilce']=="58059") { echo "Ýmranlý"; }
+if ($myrow['ilce']=="58060") { echo "Kangal"; }
+if ($myrow['ilce']=="58061") { echo "Koyulhisar"; }
+if ($myrow['ilce']=="58062") { echo "Suþehri"; }
+if ($myrow['ilce']=="58063") { echo "Þarkýþla"; }
+if ($myrow['ilce']=="58064") { echo "Ulaþ"; }
+if ($myrow['ilce']=="58065") { echo "Yýldýzeli"; }
+if ($myrow['ilce']=="58066") { echo "Zara"; }
+if ($myrow['ilce']=="59001") { echo "Merkez"; }
+if ($myrow['ilce']=="59051") { echo "Çerkezköy"; }
+if ($myrow['ilce']=="59052") { echo "Çorlu"; }
+if ($myrow['ilce']=="59053") { echo "Hayrabolu"; }
+if ($myrow['ilce']=="59054") { echo "Malkara"; }
+if ($myrow['ilce']=="59055") { echo "Marmaraereðlisi"; }
+if ($myrow['ilce']=="59056") { echo "Muratlý"; }
+if ($myrow['ilce']=="59057") { echo "Saray"; }
+if ($myrow['ilce']=="59058") { echo "Þarköy"; }
+if ($myrow['ilce']=="60001") { echo "Merkez"; }
+if ($myrow['ilce']=="60051") { echo "Almus"; }
+if ($myrow['ilce']=="60052") { echo "Artova"; }
+if ($myrow['ilce']=="60053") { echo "Baþçiftlik"; }
+if ($myrow['ilce']=="60054") { echo "Erbaa"; }
+if ($myrow['ilce']=="60055") { echo "Niksar"; }
+if ($myrow['ilce']=="60056") { echo "Pazar"; }
+if ($myrow['ilce']=="60057") { echo "Reþadiye"; }
+if ($myrow['ilce']=="60058") { echo "Sulusaray"; }
+if ($myrow['ilce']=="60059") { echo "Turhal"; }
+if ($myrow['ilce']=="60060") { echo "Yeþilyurt"; }
+if ($myrow['ilce']=="60061") { echo "Zile"; }
+if ($myrow['ilce']=="61001") { echo "Merkez"; }
+if ($myrow['ilce']=="61051") { echo "Akçaabat"; }
+if ($myrow['ilce']=="61052") { echo "Araklý"; }
+if ($myrow['ilce']=="61053") { echo "Arsin"; }
+if ($myrow['ilce']=="61054") { echo "Beþikdüzü"; }
+if ($myrow['ilce']=="61055") { echo "Çarþýbaþý"; }
+if ($myrow['ilce']=="61056") { echo "Çaykara"; }
+if ($myrow['ilce']=="61057") { echo "Dernekpazarý"; }
+if ($myrow['ilce']=="61058") { echo "Düzköy"; }
+if ($myrow['ilce']=="61059") { echo "Hayrat"; }
+if ($myrow['ilce']=="61060") { echo "Köprübaþý"; }
+if ($myrow['ilce']=="61061") { echo "Maçka"; }
+if ($myrow['ilce']=="61062") { echo "Of"; }
+if ($myrow['ilce']=="61063") { echo "Sürmene"; }
+if ($myrow['ilce']=="61064") { echo "Þalpazarý"; }
+if ($myrow['ilce']=="61065") { echo "Tonya"; }
+if ($myrow['ilce']=="61066") { echo "Vakfýkebir"; }
+if ($myrow['ilce']=="61067") { echo "Yomra"; }
+if ($myrow['ilce']=="62001") { echo "Merkez"; }
+if ($myrow['ilce']=="62051") { echo "Çemiþgezek"; }
+if ($myrow['ilce']=="62052") { echo "Hozat"; }
+if ($myrow['ilce']=="62053") { echo "Mazgirt"; }
+if ($myrow['ilce']=="62054") { echo "Nazýmiye"; }
+if ($myrow['ilce']=="62055") { echo "Ovacýk"; }
+if ($myrow['ilce']=="62056") { echo "Pertek"; }
+if ($myrow['ilce']=="62057") { echo "Pülümür"; }
+if ($myrow['ilce']=="63001") { echo "Merkez"; }
+if ($myrow['ilce']=="63051") { echo "Akçakale"; }
+if ($myrow['ilce']=="63052") { echo "Birecik"; }
+if ($myrow['ilce']=="63053") { echo "Bozova"; }
+if ($myrow['ilce']=="63054") { echo "Ceylanpýnar"; }
+if ($myrow['ilce']=="63055") { echo "Halfeti"; }
+if ($myrow['ilce']=="63056") { echo "Harran"; }
+if ($myrow['ilce']=="63057") { echo "Hilvan"; }
+if ($myrow['ilce']=="63058") { echo "Siverek"; }
+if ($myrow['ilce']=="63059") { echo "Suruç"; }
+if ($myrow['ilce']=="63060") { echo "Viranþehir"; }
+if ($myrow['ilce']=="64001") { echo "Merkez"; }
+if ($myrow['ilce']=="64051") { echo "Banaz"; }
+if ($myrow['ilce']=="64052") { echo "Eþme"; }
+if ($myrow['ilce']=="64053") { echo "Karahallý"; }
+if ($myrow['ilce']=="64054") { echo "Sivaslý"; }
+if ($myrow['ilce']=="64055") { echo "Ulubey"; }
+if ($myrow['ilce']=="65001") { echo "Merkez"; }
+if ($myrow['ilce']=="65051") { echo "Bahçesaray"; }
+if ($myrow['ilce']=="65052") { echo "Baþkale"; }
+if ($myrow['ilce']=="65053") { echo "Çaldýran"; }
+if ($myrow['ilce']=="65054") { echo "Çatak"; }
+if ($myrow['ilce']=="65055") { echo "Edremit (Gümüþdere)"; }
+if ($myrow['ilce']=="65056") { echo "Erciþ"; }
+if ($myrow['ilce']=="65057") { echo "Gevaþ"; }
+if ($myrow['ilce']=="65058") { echo "Gürpýnar"; }
+if ($myrow['ilce']=="65059") { echo "Muradiye"; }
+if ($myrow['ilce']=="65060") { echo "Özalp"; }
+if ($myrow['ilce']=="65061") { echo "Saray"; }
+if ($myrow['ilce']=="66001") { echo "Merkez"; }
+if ($myrow['ilce']=="66051") { echo "Akdaðmadeni"; }
+if ($myrow['ilce']=="66052") { echo "Aydýncýk"; }
+if ($myrow['ilce']=="66053") { echo "Boðazlýyan"; }
+if ($myrow['ilce']=="66054") { echo "Çandýr"; }
+if ($myrow['ilce']=="66055") { echo "Çayýralan"; }
+if ($myrow['ilce']=="66056") { echo "Çekerek"; }
+if ($myrow['ilce']=="66057") { echo "Kadýþehri"; }
+if ($myrow['ilce']=="66058") { echo "Saraykent"; }
+if ($myrow['ilce']=="66059") { echo "Sarýkaya"; }
+if ($myrow['ilce']=="66060") { echo "Sorgun"; }
+if ($myrow['ilce']=="66061") { echo "Þefaatli"; }
+if ($myrow['ilce']=="66062") { echo "Yenifakýlý"; }
+if ($myrow['ilce']=="66063") { echo "Yerköy"; }
+if ($myrow['ilce']=="67001") { echo "Merkez"; }
+if ($myrow['ilce']=="67051") { echo "Alaplý"; }
+if ($myrow['ilce']=="67052") { echo "Çaycuma"; }
+if ($myrow['ilce']=="67053") { echo "Devrek"; }
+if ($myrow['ilce']=="67054") { echo "Karadenizereðli"; }
+if ($myrow['ilce']=="67055") { echo "Gökçebey"; }
+if ($myrow['ilce']=="68001") { echo "Merkez"; }
+if ($myrow['ilce']=="68051") { echo "Aðaçören"; }
+if ($myrow['ilce']=="68052") { echo "Eskil"; }
+if ($myrow['ilce']=="68053") { echo "Aðaçlý (Gülaðaç)"; }
+if ($myrow['ilce']=="68054") { echo "Güzelyurt"; }
+if ($myrow['ilce']=="68055") { echo "Ortaköy"; }
+if ($myrow['ilce']=="68056") { echo "Sarýyahþi"; }
+if ($myrow['ilce']=="69001") { echo "Merkez"; }
+if ($myrow['ilce']=="69051") { echo "Aydýntepe"; }
+if ($myrow['ilce']=="69052") { echo "Demirözü"; }
+if ($myrow['ilce']=="70001") { echo "Merkez"; }
+if ($myrow['ilce']=="70051") { echo "Ayrancý"; }
+if ($myrow['ilce']=="70052") { echo "Baþyayla"; }
+if ($myrow['ilce']=="70053") { echo "Ermenek"; }
+if ($myrow['ilce']=="70054") { echo "Kazýmkarabekir"; }
+if ($myrow['ilce']=="70055") { echo "Sarýveliler"; }
+if ($myrow['ilce']=="71001") { echo "Merkez"; }
+if ($myrow['ilce']=="71051") { echo "Bahþýlý"; }
+if ($myrow['ilce']=="71052") { echo "Balýþeyh"; }
+if ($myrow['ilce']=="71053") { echo "Çelebi"; }
+if ($myrow['ilce']=="71054") { echo "Delice"; }
+if ($myrow['ilce']=="71055") { echo "Karakeçili"; }
+if ($myrow['ilce']=="71056") { echo "Keskin"; }
+if ($myrow['ilce']=="71057") { echo "Sulakyurt"; }
+if ($myrow['ilce']=="71058") { echo "Yahþihan"; }
+if ($myrow['ilce']=="72001") { echo "Merkez"; }
+if ($myrow['ilce']=="72051") { echo "Beþiri"; }
+if ($myrow['ilce']=="72052") { echo "Gercüþ"; }
+if ($myrow['ilce']=="72053") { echo "Hasankeyf"; }
+if ($myrow['ilce']=="72054") { echo "Kozluk"; }
+if ($myrow['ilce']=="72055") { echo "Sason"; }
+if ($myrow['ilce']=="73001") { echo "Merkez"; }
+if ($myrow['ilce']=="73051") { echo "Beytüþþebap"; }
+if ($myrow['ilce']=="73052") { echo "Cizre"; }
+if ($myrow['ilce']=="73053") { echo "Güçlükonak"; }
+if ($myrow['ilce']=="73054") { echo "Ýdil"; }
+if ($myrow['ilce']=="73055") { echo "Silopi"; }
+if ($myrow['ilce']=="73056") { echo "Uludere"; }
+if ($myrow['ilce']=="74001") { echo "Merkez"; }
+if ($myrow['ilce']=="74051") { echo "Amasra"; }
+if ($myrow['ilce']=="74052") { echo "Kurucaþile"; }
+if ($myrow['ilce']=="74053") { echo "Ulus"; }
+if ($myrow['ilce']=="75001") { echo "Merkez"; }
+if ($myrow['ilce']=="75051") { echo "Çýldýr"; }
+if ($myrow['ilce']=="75052") { echo "Damal"; }
+if ($myrow['ilce']=="75053") { echo "Göle"; }
+if ($myrow['ilce']=="75054") { echo "Hanak"; }
+if ($myrow['ilce']=="75055") { echo "Posof"; }
+if ($myrow['ilce']=="76001") { echo "Merkez"; }
+if ($myrow['ilce']=="76051") { echo "Aralýk"; }
+if ($myrow['ilce']=="76052") { echo "Karakoyunlu"; }
+if ($myrow['ilce']=="76053") { echo "Tuzluca"; }
+if ($myrow['ilce']=="77001") { echo "Merkez"; }
+if ($myrow['ilce']=="77051") { echo "Altýnova"; }
+if ($myrow['ilce']=="77052") { echo "Armutlu"; }
+if ($myrow['ilce']=="77053") { echo "Çiftlikköy"; }
+if ($myrow['ilce']=="77054") { echo "Çýnarcýk"; }
+if ($myrow['ilce']=="77055") { echo "Termal"; }
+if ($myrow['ilce']=="78001") { echo "Merkez"; }
+if ($myrow['ilce']=="78051") { echo "Eflani"; }
+if ($myrow['ilce']=="78052") { echo "Eskipazar"; }
+if ($myrow['ilce']=="78053") { echo "Ovacýk"; }
+if ($myrow['ilce']=="78054") { echo "Safranbolu"; }
+if ($myrow['ilce']=="78055") { echo "Yenice"; }
+if ($myrow['ilce']=="79001") { echo "Merkez"; }
+if ($myrow['ilce']=="79051") { echo "Elbeyli"; }
+if ($myrow['ilce']=="79052") { echo "Musabeyli"; }
+if ($myrow['ilce']=="79053") { echo "Polateli"; }
+if ($myrow['ilce']=="80001") { echo "Merkez"; }
+if ($myrow['ilce']=="80051") { echo "Bahçe"; }
+if ($myrow['ilce']=="80052") { echo "Düziçi"; }
+if ($myrow['ilce']=="80053") { echo "Hasanbeyli"; }
+if ($myrow['ilce']=="80054") { echo "Kadirli"; }
+if ($myrow['ilce']=="80055") { echo "Sumbas"; }
+if ($myrow['ilce']=="80056") { echo "Toprakkale"; }
+if ($myrow['ilce']=="81001") { echo "Merkez"; }
+if ($myrow['ilce']=="81051") { echo "Akçakoca"; }
+if ($myrow['ilce']=="81052") { echo "Cumayeri"; }
+if ($myrow['ilce']=="81053") { echo "Çilimli"; }
+if ($myrow['ilce']=="81054") { echo "Gölyaka"; }
+if ($myrow['ilce']=="81055") { echo "Gümüþova"; }
+if ($myrow['ilce']=="81056") { echo "Kaynaþlý"; }
+if ($myrow['ilce']=="81057") { echo "Yýðýlca"; }
+echo "</b>";
+
+    // Diðer ilçeleri de çoðaltabilirsiniz
+    echo "<br>Mahalle-Köy: -----> <b>".$mahalle;
+    echo "</b>";
+   //Bunun için ayrý bir yapýya gerek yok. koy_xml.php dosyasýnda $koyno deðiþkenini $koyadi olarak seçin
+
+?>
